@@ -1,0 +1,6 @@
+framework module Pods_FlaashCollectables {
+  umbrella header "Pods-FlaashCollectables-umbrella.h"
+
+  export *
+  module * { export * }
+}

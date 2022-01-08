@@ -1,0 +1,453 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EA75E7427892ADB00F9B001 /* FlaashCollectablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA75E7327892ADB00F9B001 /* FlaashCollectablesApp.swift */; };
+		5EA75E7627892ADB00F9B001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA75E7527892ADB00F9B001 /* ContentView.swift */; };
+		5EA75E7827892ADD00F9B001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA75E7727892ADD00F9B001 /* Assets.xcassets */; };
+		5EA75E7B27892ADD00F9B001 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA75E7A27892ADD00F9B001 /* Preview Assets.xcassets */; };
+		5EA75E8627892C5700F9B001 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5EA75E8527892C5700F9B001 /* GoogleService-Info.plist */; };
+		5EA75E8827892C9E00F9B001 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA75E8727892C9E00F9B001 /* Login.swift */; };
+		5EF7464D27892ED300845BD7 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7464C27892ED300845BD7 /* LoginController.swift */; };
+		5EF7464F2789CF7900845BD7 /* LoadingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF7464E2789CF7900845BD7 /* LoadingScreen.swift */; };
+		5EF746512789DA8500845BD7 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF746502789DA8500845BD7 /* Home.swift */; };
+		ADDBB6946D5B3E4C1B9B6D39 /* Pods_FlaashCollectables.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E64C00E8DF6AD64AF156ACC6 /* Pods_FlaashCollectables.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3160043ED3CF3DDE6CB48FE6 /* Pods-FlaashCollectables.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlaashCollectables.release.xcconfig"; path = "Target Support Files/Pods-FlaashCollectables/Pods-FlaashCollectables.release.xcconfig"; sourceTree = "<group>"; };
+		5EA75E7027892ADB00F9B001 /* FlaashCollectables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlaashCollectables.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EA75E7327892ADB00F9B001 /* FlaashCollectablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlaashCollectablesApp.swift; sourceTree = "<group>"; };
+		5EA75E7527892ADB00F9B001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5EA75E7727892ADD00F9B001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EA75E7A27892ADD00F9B001 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5EA75E7C27892ADD00F9B001 /* FlaashCollectables.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FlaashCollectables.entitlements; sourceTree = "<group>"; };
+		5EA75E8527892C5700F9B001 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5EA75E8727892C9E00F9B001 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		5EF7464C27892ED300845BD7 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		5EF7464E2789CF7900845BD7 /* LoadingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreen.swift; sourceTree = "<group>"; };
+		5EF746502789DA8500845BD7 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		DD06A5C04BF307FFA9101222 /* Pods-FlaashCollectables.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlaashCollectables.debug.xcconfig"; path = "Target Support Files/Pods-FlaashCollectables/Pods-FlaashCollectables.debug.xcconfig"; sourceTree = "<group>"; };
+		E64C00E8DF6AD64AF156ACC6 /* Pods_FlaashCollectables.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlaashCollectables.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EA75E6D27892ADB00F9B001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADDBB6946D5B3E4C1B9B6D39 /* Pods_FlaashCollectables.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EA75E6727892ADB00F9B001 = {
+			isa = PBXGroup;
+			children = (
+				5EA75E7227892ADB00F9B001 /* FlaashCollectables */,
+				5EA75E7127892ADB00F9B001 /* Products */,
+				66710F3159C15850A63A6ED7 /* Pods */,
+				FBA178D41E7685B3AF71D732 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5EA75E7127892ADB00F9B001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EA75E7027892ADB00F9B001 /* FlaashCollectables.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EA75E7227892ADB00F9B001 /* FlaashCollectables */ = {
+			isa = PBXGroup;
+			children = (
+				5EA75E8427892B9C00F9B001 /* Controllers */,
+				5EA75E8327892B8F00F9B001 /* Models */,
+				5EA75E8227892B8500F9B001 /* Views */,
+				5EA75E7327892ADB00F9B001 /* FlaashCollectablesApp.swift */,
+				5EA75E7527892ADB00F9B001 /* ContentView.swift */,
+				5EA75E8527892C5700F9B001 /* GoogleService-Info.plist */,
+				5EA75E7727892ADD00F9B001 /* Assets.xcassets */,
+				5EA75E7C27892ADD00F9B001 /* FlaashCollectables.entitlements */,
+				5EA75E7927892ADD00F9B001 /* Preview Content */,
+			);
+			path = FlaashCollectables;
+			sourceTree = "<group>";
+		};
+		5EA75E7927892ADD00F9B001 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5EA75E7A27892ADD00F9B001 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5EA75E8227892B8500F9B001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5EA75E8727892C9E00F9B001 /* Login.swift */,
+				5EF7464E2789CF7900845BD7 /* LoadingScreen.swift */,
+				5EF746502789DA8500845BD7 /* Home.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5EA75E8327892B8F00F9B001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5EA75E8427892B9C00F9B001 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5EF7464C27892ED300845BD7 /* LoginController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		66710F3159C15850A63A6ED7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD06A5C04BF307FFA9101222 /* Pods-FlaashCollectables.debug.xcconfig */,
+				3160043ED3CF3DDE6CB48FE6 /* Pods-FlaashCollectables.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FBA178D41E7685B3AF71D732 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E64C00E8DF6AD64AF156ACC6 /* Pods_FlaashCollectables.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EA75E6F27892ADB00F9B001 /* FlaashCollectables */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EA75E7F27892ADD00F9B001 /* Build configuration list for PBXNativeTarget "FlaashCollectables" */;
+			buildPhases = (
+				DCF28A307585A099991B9CEA /* [CP] Check Pods Manifest.lock */,
+				5EA75E6C27892ADB00F9B001 /* Sources */,
+				5EA75E6D27892ADB00F9B001 /* Frameworks */,
+				5EA75E6E27892ADB00F9B001 /* Resources */,
+				3DF6F08B30ADE94DB79D4D26 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlaashCollectables;
+			productName = FlaashCollectables;
+			productReference = 5EA75E7027892ADB00F9B001 /* FlaashCollectables.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EA75E6827892ADB00F9B001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					5EA75E6F27892ADB00F9B001 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 5EA75E6B27892ADB00F9B001 /* Build configuration list for PBXProject "FlaashCollectables" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EA75E6727892ADB00F9B001;
+			productRefGroup = 5EA75E7127892ADB00F9B001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EA75E6F27892ADB00F9B001 /* FlaashCollectables */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EA75E6E27892ADB00F9B001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EA75E7B27892ADD00F9B001 /* Preview Assets.xcassets in Resources */,
+				5EA75E7827892ADD00F9B001 /* Assets.xcassets in Resources */,
+				5EA75E8627892C5700F9B001 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3DF6F08B30ADE94DB79D4D26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlaashCollectables/Pods-FlaashCollectables-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FlaashCollectables/Pods-FlaashCollectables-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FlaashCollectables/Pods-FlaashCollectables-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF28A307585A099991B9CEA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlaashCollectables-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EA75E6C27892ADB00F9B001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EF7464F2789CF7900845BD7 /* LoadingScreen.swift in Sources */,
+				5EA75E8827892C9E00F9B001 /* Login.swift in Sources */,
+				5EA75E7627892ADB00F9B001 /* ContentView.swift in Sources */,
+				5EA75E7427892ADB00F9B001 /* FlaashCollectablesApp.swift in Sources */,
+				5EF746512789DA8500845BD7 /* Home.swift in Sources */,
+				5EF7464D27892ED300845BD7 /* LoginController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5EA75E7D27892ADD00F9B001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EA75E7E27892ADD00F9B001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		5EA75E8027892ADD00F9B001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD06A5C04BF307FFA9101222 /* Pods-FlaashCollectables.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlaashCollectables/FlaashCollectables.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlaashCollectables/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GeorgeKilleen.FlaashCollectables;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5EA75E8127892ADD00F9B001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3160043ED3CF3DDE6CB48FE6 /* Pods-FlaashCollectables.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FlaashCollectables/FlaashCollectables.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"FlaashCollectables/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GeorgeKilleen.FlaashCollectables;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EA75E6B27892ADB00F9B001 /* Build configuration list for PBXProject "FlaashCollectables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA75E7D27892ADD00F9B001 /* Debug */,
+				5EA75E7E27892ADD00F9B001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EA75E7F27892ADD00F9B001 /* Build configuration list for PBXNativeTarget "FlaashCollectables" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EA75E8027892ADD00F9B001 /* Debug */,
+				5EA75E8127892ADD00F9B001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EA75E6827892ADB00F9B001 /* Project object */;
+}

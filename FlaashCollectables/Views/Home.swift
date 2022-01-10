@@ -145,6 +145,13 @@ struct Home: View {
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                            .overlay(VStack{
+                                //Where the main tile info goes...
+                                Text("Home")
+                                    .font(.largeTitle)
+                                Divider()
+                                Spacer()
+                            }.padding())
                             .padding(10)
                             
                     }
@@ -161,6 +168,16 @@ struct Home: View {
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                            .overlay(VStack{Text("BUSINESS ACCOUNT")
+                                Divider()
+                                Spacer()
+                            }
+                            .padding())
+                            .overlay(VStack{
+                                
+                                Text("£0.00")
+                                        .font(.system(size: 60))
+                            })
                             .padding(10)
                             .padding(.top, 65)
                             
@@ -176,6 +193,16 @@ struct Home: View {
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                            .overlay(VStack{Text("PROFIT/LOSS")
+                                Divider()
+                                Spacer()
+                            }
+                                .padding())
+                            .overlay(VStack{
+                                
+                                Text("£0.00")
+                                        .font(.system(size: 60))
+                            })
                             .padding(10)
                             .padding(.top, 245)
                             
@@ -191,6 +218,16 @@ struct Home: View {
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                            .overlay(VStack{Text("SALES COUNT")
+                                Divider()
+                                Spacer()
+                            }
+                                .padding())
+                            .overlay(VStack{
+                                
+                                Text("0")
+                                        .font(.system(size: 60))
+                            })
                             .padding(10)
                             .padding(.top, 425)
                             

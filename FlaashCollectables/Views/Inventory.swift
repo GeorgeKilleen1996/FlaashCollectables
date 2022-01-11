@@ -103,20 +103,189 @@ struct Inventory: View {
                     .frame(width: width/1.4)
                     .clipped()
                     .zIndex(0)
+                
+                //Adding the heading tile...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: 200, height: 50)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("Inventory")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Adding the main info tile...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: width/1.4 - 20, height: getRect().height - 370)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                                Text("Stock List")
+                                    .font(.system(size: 30))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+ 
+                        .padding(10)
+                        .padding(.top, 60)
+                
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                let tileWidth = (width/1.4 - 80)/5
+                //Adding the sub tiles...
+                //Tile 1
+                ZStack(alignment: .leading){
+                    
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: ((width/1.4 - 80)/5), height: ((width/1.4 - 80)/5))
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                            Text("SINGLES")
+                                .font(.system(size: 15))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+                            
+                            
+                        .padding(10)
+                        .padding(.top, (getRect().height - 360) + 60)
+                    
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Tile 2
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: ((width/1.4 - 80)/5), height: ((width/1.4 - 80)/5))
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                            Text("BUNDLES")
+                                .font(.system(size: 15))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+                         
+                        .padding(10)
+                        .padding(.top, (getRect().height - 360) + 60)
+                        .padding(.leading, tileWidth + 15)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Tile 3...
+                ZStack{
+
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: ((width/1.4 - 80)/5), height: ((width/1.4 - 80)/5))
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                            Text("GRADED")
+                                .font(.system(size: 15))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+                        .padding(10)
+                        .padding(.top, (getRect().height - 360) + 60)
+                        .padding(.leading, tileWidth*2 + 30)
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Tile 4...
+                ZStack{
+
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: ((width/1.4 - 80)/5), height: ((width/1.4 - 80)/5))
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                            Text("SEALED")
+                                .font(.system(size: 15))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+                        
+                        .padding(10)
+                        .padding(.top, (getRect().height - 360) + 60)
+                        .padding(.leading, tileWidth*3 + 45)
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Tile 5...
+                ZStack{
+
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: ((width/1.4 - 80)/5), height: ((width/1.4 - 80)/5))
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                            Text("ACCESSORIES")
+                                .font(.system(size: 13))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+                        .padding(10)
+                        .padding(.top, (getRect().height - 360) + 60)
+                        .padding(.leading, tileWidth*4 + 60)
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
                 ZStack{
                     
                     //Creating the tile to show whos logged in...
                     ZStack (alignment: .leading){
                         //The tile
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(Color.black.opacity(0.4))
+                            .fill(Color.black.opacity(0.8))
                             .frame(width: 200, height: 50)
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.white.opacity(0.5), lineWidth: 1))
                             .overlay(
                                 //Adding who's logged in...
-                                Text("Inventory")
+                                Text("George Killeen")
                                     .padding(.leading, 25))
                             .padding(10)
                         

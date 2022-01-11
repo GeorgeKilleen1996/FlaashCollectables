@@ -8,17 +8,11 @@
 import SwiftUI
 import Firebase
 
-struct Option: Hashable{
-    let title: String
-    let imageName: String
-    let sectionID: Int
-}
-
-struct Home: View {
+struct BuyingCaulculator: View {
     
     @AppStorage("log_Status") var status = false
-    @Binding var loggedIn: Int
     
+    @Binding var loggedIn: Int
     
     //Creating a storage for my navbar items to be stored
     let options: [Option] = [
@@ -63,8 +57,7 @@ struct Home: View {
                 VStack(alignment: .leading){
                     ForEach(options, id: \.self){ option in
                         HStack{
-                            Button(action:{loggedIn = option.sectionID
-                            }){
+                            Button(action:{loggedIn = option.sectionID}){
                             Image(systemName: option.imageName)
                                 .resizable()
                                 .aspectRatio(contentMode: .fit)
@@ -123,7 +116,7 @@ struct Home: View {
                                 .stroke(Color.white.opacity(0.5), lineWidth: 1))
                             .overlay(
                                 //Adding who's logged in...
-                                Text("George Killeen")
+                                Text("Buying Calculator")
                                     .padding(.leading, 25))
                             .padding(10)
                         
@@ -140,108 +133,6 @@ struct Home: View {
                     }
                     .frame(width: width/1.4, height: getRect().height - 180, alignment:
                                 .topTrailing)
-                    
-                    ZStack{
-                    //Adding the main tile for the home page
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(Color.black.opacity(0.8))
-                            .frame(width: 410, height: getRect().height - 200)
-                            .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
-                            .overlay(VStack{
-                                //Where the main tile info goes...
-                                Text("Home")
-                                    .font(.largeTitle)
-                                Divider()
-                                Spacer()
-                            }.padding())
-                            .padding(10)
-                            
-                    }
-                    .frame(width: width/1.4, height: getRect().height - 180, alignment:
-                                .topLeading)
-                    
-                    //Adding three subtiles for homepage
-                    
-                    ZStack{
-                    //Sub tile 1
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(Color.black.opacity(0.8))
-                            .frame(width: 200, height: 165)
-                            .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
-                            .overlay(VStack{Text("BUSINESS ACCOUNT")
-                                Divider()
-                                Spacer()
-                            }
-                            .padding())
-                            .overlay(VStack{
-                                
-                                Text("£0.00")
-                                        .font(.system(size: 60))
-                            })
-                            .padding(10)
-                            .padding(.top, 65)
-                            
-                    }
-                    .frame(width: width/1.4, height: getRect().height - 180, alignment:
-                                .topTrailing)
-                    
-                    ZStack{
-                    //Sub tile 2
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(Color.black.opacity(0.8))
-                            .frame(width: 200, height: 165)
-                            .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
-                            .overlay(VStack{Text("PROFIT/LOSS")
-                                Divider()
-                                Spacer()
-                            }
-                                .padding())
-                            .overlay(VStack{
-                                
-                                Text("£0.00")
-                                        .font(.system(size: 60))
-                            })
-                            .padding(10)
-                            .padding(.top, 245)
-                            
-                    }
-                    .frame(width: width/1.4, height: getRect().height - 180, alignment:
-                                .topTrailing)
-                    
-                    ZStack{
-                    //Sub tile 3
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(Color.black.opacity(0.8))
-                            .frame(width: 200, height: 165)
-                            .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
-                            .overlay(VStack{Text("SALES COUNT")
-                                Divider()
-                                Spacer()
-                            }
-                                .padding())
-                            .overlay(VStack{
-                                
-                                Text("0")
-                                        .font(.system(size: 60))
-                            })
-                            .padding(10)
-                            .padding(.top, 425)
-                            
-                    }
-                    .frame(width: width/1.4, height: getRect().height - 180, alignment:
-                                .topTrailing)
-                    
-                    
-                    
-                    
                 }
                 
             }

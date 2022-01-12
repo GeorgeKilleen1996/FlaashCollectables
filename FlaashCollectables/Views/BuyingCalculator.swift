@@ -103,6 +103,27 @@ struct BuyingCaulculator: View {
                     .frame(width: width/1.4)
                     .clipped()
                     .zIndex(0)
+                
+                //Adding the heading tile...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: 220, height: 50)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("Buying Calculator")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
                 ZStack{
                     
                     //Creating the tile to show whos logged in...
@@ -113,7 +134,7 @@ struct BuyingCaulculator: View {
                             .frame(width: 200, height: 50)
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
                             .overlay(
                                 //Adding who's logged in...
                                 Text("Buying Calculator")

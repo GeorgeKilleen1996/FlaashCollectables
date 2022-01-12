@@ -120,7 +120,7 @@ struct Home: View {
                             .frame(width: 200, height: 50)
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
                             .overlay(
                                 //Adding who's logged in...
                                 Text("George Killeen")
@@ -145,10 +145,10 @@ struct Home: View {
                     //Adding the main tile for the home page
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
                             .fill(Color.black.opacity(0.8))
-                            .frame(width: 410, height: getRect().height - 200)
+                            .frame(width: 410, height: getRect().height - 190)
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
                             .overlay(VStack{
                                 //Where the main tile info goes...
                                 Text("Home")
@@ -183,7 +183,7 @@ struct Home: View {
                                         .font(.system(size: 60))
                             })
                             .padding(10)
-                            .padding(.top, 65)
+                            .padding(.top, 70)
                             
                     }
                     .frame(width: width/1.4, height: getRect().height - 180, alignment:
@@ -196,7 +196,7 @@ struct Home: View {
                             .frame(width: 200, height: 165)
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
                             .overlay(VStack{Text("PROFIT/LOSS")
                                 Divider()
                                 Spacer()
@@ -208,7 +208,7 @@ struct Home: View {
                                         .font(.system(size: 60))
                             })
                             .padding(10)
-                            .padding(.top, 245)
+                            .padding(.top, 250)
                             
                     }
                     .frame(width: width/1.4, height: getRect().height - 180, alignment:
@@ -221,7 +221,7 @@ struct Home: View {
                             .frame(width: 200, height: 165)
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
                             .overlay(VStack{Text("SALES COUNT")
                                 Divider()
                                 Spacer()
@@ -233,7 +233,7 @@ struct Home: View {
                                         .font(.system(size: 60))
                             })
                             .padding(10)
-                            .padding(.top, 425)
+                            .padding(.top, 435)
                             
                     }
                     .frame(width: width/1.4, height: getRect().height - 180, alignment:

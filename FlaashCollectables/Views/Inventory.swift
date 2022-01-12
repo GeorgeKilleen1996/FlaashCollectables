@@ -282,7 +282,7 @@ struct Inventory: View {
                             .frame(width: 200, height: 50)
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
                             .overlay(
                                 //Adding who's logged in...
                                 Text("George Killeen")

@@ -103,6 +103,76 @@ struct Accessories: View {
                     .frame(width: width/1.4)
                     .clipped()
                     .zIndex(0)
+                
+                //Adding the heading tile...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: 200, height: 50)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("Accessories")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Adding the tile to add stock...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: (width/1.4 - 20)*0.4 - 5, height: getRect().height - 250)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                                Text("Add Cards")
+                                    .font(.system(size: 30))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+ 
+                        .padding(10)
+                        .padding(.leading, (width/1.4 - 20)*0.6 + 5)
+                        .padding(.top, 60)
+                
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Adding the main info tile...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: (width/1.4 - 20)*0.6 - 5, height: getRect().height - 250)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                                Text("Stock List")
+                                    .font(.system(size: 30))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+ 
+                        .padding(10)
+                        .padding(.top, 60)
+                
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
                 ZStack{
                     
                     //Creating the tile to show whos logged in...
@@ -113,7 +183,7 @@ struct Accessories: View {
                             .frame(width: 200, height: 50)
                             .overlay(
                             RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
                             .overlay(
                                 //Adding who's logged in...
                                 Text("Accessories")

@@ -124,6 +124,232 @@ struct MonthlyFigures: View {
                 .frame(width: width/1.4, height: getRect().height - 180, alignment:
                             .topLeading)
                 
+                
+                let tileWidth = ((width/1.4) - 50) / 4
+                let tileHeight = ((getRect().height - 270)/3)
+                
+                //Adding the individual monthly tiles...
+                ZStack(alignment: .leading){
+                    
+                    //Tile 1...
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: tileWidth, height: tileHeight)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("JANUARY")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                        .padding(.top, 60)
+     
+                //Tile 2...
+   
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: tileWidth, height: tileHeight)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("FEBRUARY")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                        .padding(.top, 60)
+                        .padding(.leading, tileWidth + 10)
+                
+                //Tile 3...
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: tileWidth, height: tileHeight)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("MARCH")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                        .padding(.top, 60)
+                        .padding(.leading, tileWidth*2 + 20)
+                    
+                    //Tile 4...
+                        
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.black.opacity(0.8))
+                            .frame(width: tileWidth, height: tileHeight)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                            .overlay(VStack{
+                                Text("APRIL")
+                                .font(.largeTitle)
+                            })
+      
+                            .padding(10)
+                            .padding(.top, 60)
+                            .padding(.leading, tileWidth*3 + 30)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                ZStack(alignment: .leading){
+                    
+                    
+                    //Tile 5...
+
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.black.opacity(0.8))
+                            .frame(width: tileWidth, height: tileHeight)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                            .overlay(VStack{
+                                Text("MAY")
+                                .font(.largeTitle)
+                            })
+      
+                            .padding(10)
+                            .padding(.top, 70 + tileHeight)
+
+                    //Tile 6...
+                        
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.black.opacity(0.8))
+                            .frame(width: tileWidth, height: tileHeight)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                            .overlay(VStack{
+                                Text("JUNE")
+                                .font(.largeTitle)
+                            })
+      
+                            .padding(10)
+                            .padding(.top, 70 + tileHeight)
+                            .padding(.leading, tileWidth + 10)
+                                            
+                    //Tile 7...
+
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.black.opacity(0.8))
+                            .frame(width: tileWidth, height: tileHeight)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                            .overlay(VStack{
+                                Text("JULY")
+                                .font(.largeTitle)
+                            })
+      
+                            .padding(10)
+                            .padding(.top, 70 + tileHeight)
+                            .padding(.leading, tileWidth*2 + 20)
+                    
+                    //Tile 8...
+
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.black.opacity(0.8))
+                            .frame(width: tileWidth, height: tileHeight)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                            .overlay(VStack{
+                                Text("AUGUST")
+                                .font(.largeTitle)
+                            })
+      
+                            .padding(10)
+                            .padding(.top, 70 + tileHeight)
+                            .padding(.leading, tileWidth*3 + 30)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                ZStack(alignment: .leading){
+                    
+                    
+                    //Tile 9...
+
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.black.opacity(0.8))
+                            .frame(width: tileWidth, height: tileHeight)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                            .overlay(VStack{
+                                Text("SEPTEMBER")
+                                .font(.largeTitle)
+                            })
+      
+                            .padding(10)
+                            .padding(.top, 80 + tileHeight*2)
+
+                    //Tile 10...
+                        
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.black.opacity(0.8))
+                            .frame(width: tileWidth, height: tileHeight)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                            .overlay(VStack{
+                                Text("OCTOBER")
+                                .font(.largeTitle)
+                            })
+      
+                            .padding(10)
+                            .padding(.top, 80 + tileHeight*2)
+                            .padding(.leading, tileWidth + 10)
+                                            
+                    //Tile 11...
+
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.black.opacity(0.8))
+                            .frame(width: tileWidth, height: tileHeight)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                            .overlay(VStack{
+                                Text("NOVEMBER")
+                                .font(.largeTitle)
+                            })
+      
+                            .padding(10)
+                            .padding(.top, 80 + tileHeight*2)
+                            .padding(.leading, tileWidth*2 + 20)
+                    
+                    //Tile 12...
+
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(Color.black.opacity(0.8))
+                            .frame(width: tileWidth, height: tileHeight)
+                            .overlay(
+                            RoundedRectangle(cornerRadius: 10)
+                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                            .overlay(VStack{
+                                Text("DECEMBER")
+                                .font(.largeTitle)
+                            })
+      
+                            .padding(10)
+                            .padding(.top, 80 + tileHeight*2)
+                            .padding(.leading, tileWidth*3 + 30)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                
                 ZStack{
                     
                     //Creating the tile to show whos logged in...

@@ -103,37 +103,47 @@ struct Account: View {
                     .frame(width: width/1.4)
                     .clipped()
                     .zIndex(0)
-                ZStack{
+                
+                //Adding the top part of the account tile...
+                ZStack(alignment: .leading){
                     
-                    //Creating the tile to show whos logged in...
-                    ZStack (alignment: .leading){
-                        //The tile
-                        RoundedRectangle(cornerRadius: 10, style: .continuous)
-                            .fill(Color.black.opacity(0.4))
-                            .frame(width: 200, height: 50)
-                            .overlay(
-                            RoundedRectangle(cornerRadius: 10)
-                                .stroke(Color.white.opacity(0.8), lineWidth: 1))
-                            .overlay(
-                                //Adding who's logged in...
-                                Text("Account")
-                                    .padding(.leading, 25))
-                            .padding(10)
-                        
-                        //Tile content...
-                        Circle()
-                            .fill(Color.white)
-                            .frame(width: 70, height: 40)
-                        //Profile Image...
-                            .overlay(Image(systemName: "person.circle")
-                                        .foregroundColor(.black)
-                                        .font(.system(size: 35)))
-                        
-                        
-                    }
-                    .frame(width: width/1.4, height: getRect().height - 180, alignment:
-                                .topTrailing)
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: width/1.4 - 20, height: 200)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("Account")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                    
                 }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Adding the lower part of the account tile...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: width/1.4 - 20, height: getRect().height - 400)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("Account")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                        .padding(.top, 210)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
                 
             }
             

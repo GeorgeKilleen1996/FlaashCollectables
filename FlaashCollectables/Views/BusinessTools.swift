@@ -124,6 +124,55 @@ struct BusinessTools: View {
                 .frame(width: width/1.4, height: getRect().height - 180, alignment:
                             .topLeading)
                 
+                //Adding the tile for the profit calculator...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: (width/1.4 - 20)*0.5 - 5, height: getRect().height - 250)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                                Text("Profit Calculator")
+                                    .font(.system(size: 30))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+ 
+                        .padding(10)
+                        .padding(.leading, (width/1.4 - 20)*0.5 + 5)
+                        .padding(.top, 60)
+                
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Adding the tile for the buying calculator...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: (width/1.4 - 20)*0.5 - 5, height: getRect().height - 250)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(
+                            VStack{
+                                Text("Buying Calculator")
+                                    .font(.system(size: 30))
+                                Divider()
+                                Spacer()
+                            }.padding(10))
+ 
+                        .padding(10)
+                        .padding(.top, 60)
+                
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
                 ZStack{
                     
                     //Creating the tile to show whos logged in...

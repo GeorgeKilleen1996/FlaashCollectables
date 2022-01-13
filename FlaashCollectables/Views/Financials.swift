@@ -104,25 +104,104 @@ struct Financials: View {
                     .clipped()
                     .zIndex(0)
                 
-                //Adding the heading tile...
-                ZStack(alignment: .leading){
-                    
+                
+                ZStack{
+                //Adding the main tile for the home page
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .fill(Color.black.opacity(0.8))
-                        .frame(width: 200, height: 50)
+                        .frame(width: 410, height: getRect().height - 190)
                         .overlay(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.white.opacity(0.8), lineWidth: 1))
                         .overlay(VStack{
+                            //Where the main tile info goes...
                             Text("Financials")
-                            .font(.largeTitle)
-                        })
-  
+                                .font(.largeTitle)
+                            Divider()
+                            Spacer()
+                        }.padding())
                         .padding(10)
-                    
+                        
                 }
                 .frame(width: width/1.4, height: getRect().height - 180, alignment:
                             .topLeading)
+                
+                //Adding three subtiles for homepage
+                
+                ZStack{
+                //Sub tile 1
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: 200, height: 165)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.5), lineWidth: 1))
+                        .overlay(VStack{Text("CURRENT MONTH")
+                            Divider()
+                            Spacer()
+                        }
+                        .padding())
+                        .overlay(VStack{
+                            
+                            Text("£0.00")
+                                    .font(.system(size: 60))
+                        })
+                        .padding(10)
+                        .padding(.top, 70)
+                        
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topTrailing)
+                
+                ZStack{
+                //Sub tile 2
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: 200, height: 165)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{Text("PREVIOUS MONTH")
+                            Divider()
+                            Spacer()
+                        }
+                            .padding())
+                        .overlay(VStack{
+                            
+                            Text("£0.00")
+                                    .font(.system(size: 60))
+                        })
+                        .padding(10)
+                        .padding(.top, 250)
+                        
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topTrailing)
+                
+                ZStack{
+                //Sub tile 3
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: 200, height: 165)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{Text("PERCENTAGE RISE")
+                            Divider()
+                            Spacer()
+                        }
+                            .padding())
+                        .overlay(VStack{
+                            
+                            Text("0")
+                                    .font(.system(size: 60))
+                        })
+                        .padding(10)
+                        .padding(.top, 435)
+                        
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topTrailing)
                 
                 ZStack{
                     

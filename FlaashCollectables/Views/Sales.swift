@@ -124,6 +124,48 @@ struct Sales: View {
                 .frame(width: width/1.4, height: getRect().height - 180, alignment:
                             .topLeading)
                 
+                //Adding the input sales tile...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: width/1.4 - 20, height: 150)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("Sales")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                        .padding(.top, 60)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
+                //Adding the show sales tile...
+                ZStack(alignment: .leading){
+                    
+                    RoundedRectangle(cornerRadius: 10, style: .continuous)
+                        .fill(Color.black.opacity(0.8))
+                        .frame(width: width/1.4 - 20, height: getRect().height - 410)
+                        .overlay(
+                        RoundedRectangle(cornerRadius: 10)
+                            .stroke(Color.white.opacity(0.8), lineWidth: 1))
+                        .overlay(VStack{
+                            Text("Sales")
+                            .font(.largeTitle)
+                        })
+  
+                        .padding(10)
+                        .padding(.top, 220)
+                    
+                }
+                .frame(width: width/1.4, height: getRect().height - 180, alignment:
+                            .topLeading)
+                
                 ZStack{
                     
                     //Creating the tile to show whos logged in...

@@ -113,10 +113,13 @@ struct Account: View {
                         .overlay(
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.white.opacity(0.8), lineWidth: 1))
-                        .overlay(VStack{
-                            Text("Account")
-                            .font(.largeTitle)
-                        })
+                        .overlay(
+                            HStack{
+                            Circle()
+                                .fill(Color.white)
+                                .frame(width: 170, height: 170)
+                            Spacer()
+                            }.padding(10))
   
                         .padding(10)
                     
@@ -134,9 +137,11 @@ struct Account: View {
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.white.opacity(0.8), lineWidth: 1))
                         .overlay(VStack{
-                            Text("Account")
+                            Text("Account Information")
                             .font(.largeTitle)
-                        })
+                            Divider()
+                            Spacer()
+                        }.padding(10))
   
                         .padding(10)
                         .padding(.top, 210)

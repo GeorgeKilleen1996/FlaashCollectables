@@ -20,6 +20,7 @@
 		5E422A12278D3CD400161037 /* BuyingCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E422A11278D3CD400161037 /* BuyingCalculator.swift */; };
 		5E422A14278D3CFC00161037 /* ProfitCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E422A13278D3CFC00161037 /* ProfitCalculator.swift */; };
 		5E422A16278D3D2400161037 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E422A15278D3D2400161037 /* Account.swift */; };
+		5E71EF10279616550088A4CD /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E71EF0F279616550088A4CD /* FirebaseManager.swift */; };
 		5EA75E7427892ADB00F9B001 /* FlaashCollectablesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA75E7327892ADB00F9B001 /* FlaashCollectablesApp.swift */; };
 		5EA75E7627892ADB00F9B001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA75E7527892ADB00F9B001 /* ContentView.swift */; };
 		5EA75E7827892ADD00F9B001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EA75E7727892ADD00F9B001 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 		5E422A11278D3CD400161037 /* BuyingCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyingCalculator.swift; sourceTree = "<group>"; };
 		5E422A13278D3CFC00161037 /* ProfitCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfitCalculator.swift; sourceTree = "<group>"; };
 		5E422A15278D3D2400161037 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		5E71EF0F279616550088A4CD /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		5EA75E7027892ADB00F9B001 /* FlaashCollectables.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlaashCollectables.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EA75E7327892ADB00F9B001 /* FlaashCollectablesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlaashCollectablesApp.swift; sourceTree = "<group>"; };
 		5EA75E7527892ADB00F9B001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				5EF7464C27892ED300845BD7 /* LoginController.swift */,
+				5E71EF0F279616550088A4CD /* FirebaseManager.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -298,6 +301,7 @@
 				5E422A04278D3B9B00161037 /* GradedCards.swift in Sources */,
 				5E422A06278D3BC700161037 /* SealedProduct.swift in Sources */,
 				5E422A08278D3C0700161037 /* Accessories.swift in Sources */,
+				5E71EF10279616550088A4CD /* FirebaseManager.swift in Sources */,
 				5E422A10278D3CAE00161037 /* BusinessTools.swift in Sources */,
 				5EA75E7427892ADB00F9B001 /* FlaashCollectablesApp.swift in Sources */,
 				5EF746512789DA8500845BD7 /* Home.swift in Sources */,

@@ -10,6 +10,8 @@ import SwiftUI
 struct Login: View {
     //Linking to the controller
     @StateObject var loginData = LoginController()
+    @StateObject var newUser = FirebaseManager()
+    
     var body: some View {
         
         //Setting up the screen size and properties
@@ -136,7 +138,12 @@ struct Login: View {
                         .background(Color.white.opacity(0.13))
                         .cornerRadius(8)
                     
-                    Button(action: {loginData.registerUser()}, label:{
+                    Button(action: {loginData.registerUser()
+                        if(loginData.correctData)
+                        {
+                        newUser.addUser(userEmail: loginData.regUsername, userFName: loginData.regFirstName, userLName: loginData.regLastName)
+                        }
+                    }, label:{
                         Text("Register")
                             .fontWeight(.semibold)
                             .foregroundColor(.white)

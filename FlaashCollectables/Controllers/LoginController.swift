@@ -22,6 +22,7 @@ class LoginController: ObservableObject {
     @Published var regPasswordTwo = ""
     @Published var regFirstName = ""
     @Published var regLastName = ""
+    @Published var correctData = false
     
     //Loading Screen
     
@@ -73,6 +74,7 @@ class LoginController: ObservableObject {
             if let error = err{
                 errorMessage = error.localizedDescription
                 self.error.toggle()
+                correctData.toggle()
                 return
             }
             
@@ -87,5 +89,6 @@ class LoginController: ObservableObject {
         }
         
     }
+
 }
 

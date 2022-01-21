@@ -12,6 +12,8 @@ struct CardSingles: View {
     
     @AppStorage("log_Status") var status = false
     
+    @StateObject var stockData = FirebaseManager()
+    
     @Binding var loggedIn: Int
     
     //Creating a storage for my navbar items to be stored
@@ -31,9 +33,11 @@ struct CardSingles: View {
         .init(title: "Account", imageName: "person.circle", sectionID: 13)
     ]
     
+    
     var body: some View {
         //Setting up the screen size and properties
         let width = getRect().width / 1.6
+
         
         HStack(spacing: 0){
             VStack(alignment: .leading, spacing: 18, content: {
@@ -116,17 +120,14 @@ struct CardSingles: View {
                         .overlay(VStack{
                             Text("Card Singles")
                             .font(.largeTitle)
-                        })
-  
-                        .padding(10)
-                    
+                        }).padding(10)
                 }
                 .frame(width: width/1.4, height: getRect().height - 180, alignment:
                             .topLeading)
                 
                 //Adding the tile to add stock...
                 ZStack(alignment: .leading){
-                    
+
                     RoundedRectangle(cornerRadius: 10, style: .continuous)
                         .fill(Color.black.opacity(0.8))
                         .frame(width: (width/1.4 - 20)*0.4 - 5, height: getRect().height - 250)
@@ -134,17 +135,89 @@ struct CardSingles: View {
                         RoundedRectangle(cornerRadius: 10)
                             .stroke(Color.white.opacity(0.8), lineWidth: 1))
                         .overlay(
+                            //Adding the 'add cards' section...
                             VStack{
                                 Text("Add Cards")
                                     .font(.system(size: 30))
                                 Divider()
+                                
+                                TextField("Enter Card Name...", text: $stockData.iTitle)
+                                    .padding(.vertical, 20)
+                                    .padding(.horizontal)
+                                    .background(Color.gray.opacity(0.3))
+                                    .cornerRadius(8)
+                                    .textFieldStyle(PlainTextFieldStyle())
+                                
+                                TextField("Enter Set Name...", text: $stockData.iSetName)
+                                    .padding(.vertical, 20)
+                                    .padding(.horizontal)
+                                    .background(Color.gray.opacity(0.3))
+                                    .cornerRadius(8)
+                                    .textFieldStyle(PlainTextFieldStyle())
+                                
+                                TextField("Enter Set Number...", text: $stockData.iSetNumber)
+                                    .padding(.vertical, 10)
+                                    .padding(.horizontal)
+                                    .background(Color.gray.opacity(0.3))
+                                    .cornerRadius(8)
+                                    .textFieldStyle(PlainTextFieldStyle())
+                                
+                                TextField("Bought For...", text: $stockData.iBoughtFor)
+                                    .padding(.vertical, 10)
+                                    .padding(.horizontal)
+                                    .background(Color.gray.opacity(0.3))
+                                    .cornerRadius(8)
+                                    .textFieldStyle(PlainTextFieldStyle())
+                                
+                                TextField("Selling For...", text: $stockData.iSellingFor)
+                                    .padding(.vertical, 10)
+                                    .padding(.horizontal)
+                                    .background(Color.gray.opacity(0.3))
+                                    .cornerRadius(8)
+                                    .textFieldStyle(PlainTextFieldStyle())
+                                
+                                TextField("Quantity...", text: $stockData.iQuantity)
+                                    .padding(.vertical, 10)
+                                    .padding(.horizontal)
+                                    .background(Color.gray.opacity(0.3))
+                                    .cornerRadius(8)
+                                    .textFieldStyle(PlainTextFieldStyle())
+                                
+                                Text("FILL IN ALL THE \nABOVE FIELDS TO \nADD A CARD")
+                                    .foregroundColor(Color.gray.opacity(0.5))
+                                    .multilineTextAlignment(.center)
+                                    .padding(.top, 20)
+                                    .font(.system(size: 15))
+                                    .textFieldStyle(PlainTextFieldStyle())
+                                
                                 Spacer()
-                            }.padding(10))
- 
+                                }
+                                .padding(10))
+                        .overlay(VStack{
+                            
+                            Spacer()
+                            Divider()
+                            Button(action:{
+                                stockData.addStock()
+                            }, label: {
+                                Text("Add Stock")
+                                    .fontWeight(.semibold)
+                                    .foregroundColor(.white)
+                                    .padding(.vertical,10)
+                                    .frame(maxWidth: .infinity)
+                                    .background(Color.purple)
+                                    .cornerRadius(10)
+                            })
+                            .buttonStyle(PlainButtonStyle())
+                            //The login button is disabled if no data has been entered...
+                            .disabled(stockData.iTitle == "" || stockData.iSetName == "" || stockData.iSetNumber == "" || stockData.iBoughtFor == "" || stockData.iSellingFor == "" || stockData.iQuantity == "")
+                            .opacity((stockData.iTitle == "" || stockData.iSetName == "" || stockData.iSetNumber == "" || stockData.iBoughtFor == "" || stockData.iSellingFor == "" || stockData.iQuantity == "") ? 0.6 : 1)
+                            
+                        }.padding(10))
                         .padding(10)
                         .padding(.leading, (width/1.4 - 20)*0.6 + 5)
                         .padding(.top, 60)
-                
+  
                 }
                 .frame(width: width/1.4, height: getRect().height - 180, alignment:
                             .topLeading)
@@ -173,9 +246,7 @@ struct CardSingles: View {
                 .frame(width: width/1.4, height: getRect().height - 180, alignment:
                             .topLeading)
                 
-                ZStack{
-                    
-                    //Creating the tile to show whos logged in...
+                //Creating the tile to show whos logged in...
                     ZStack (alignment: .leading){
                         //The tile
                         RoundedRectangle(cornerRadius: 10, style: .continuous)
@@ -203,9 +274,6 @@ struct CardSingles: View {
                     }
                     .frame(width: width/1.4, height: getRect().height - 180, alignment:
                                 .topTrailing)
-                    
-                    
-                }
                 
             }
             
@@ -216,3 +284,5 @@ struct CardSingles: View {
 
     }
 }
+
+

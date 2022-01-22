@@ -62,9 +62,11 @@ class FirebaseManager: ObservableObject {
             "type": iType,
         ]
         
+        let title = iSetNumber + " - " + iTitle + " - " + iSetName
+        
         //Setting up the database link...
         let db  = Firestore.firestore()
-        let docRef = db.collection("Stock").document(iTitle)
+        let docRef = db.collection("Stock").document(title)
         
         //Adding the data...
         docRef.setData(docData){ error in
